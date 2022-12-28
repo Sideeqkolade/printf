@@ -31,7 +31,7 @@ int print_pointer(va_list types, char buffer[],
 
 	num_addrs = (unsigned long)addrs;
 
-	while (um_addrs > 0)
+	while (num_addrs > 0)
 	{
 		buffer[ind--] = map_to[num_addrs % 16];
 		num_addrs /= 16;
